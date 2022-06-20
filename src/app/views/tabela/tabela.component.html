@@ -1,0 +1,36 @@
+<div class="container">
+
+
+
+    <h2>Course List</h2>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Time</th>
+                <th>PTS</th>
+                <th>Jogos</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Gols Pró</th>
+                <th>Gols Contra</th>
+                <th>Saldo De Gols</th>
+                <th>Aproveitamento</th>
+              </tr>
+    
+      </thead>
+      <tbody>
+        <tr *ngFor="let jogos of listaJogos">
+            <td><img [src]="jogos.time.escudo" width="40" height="40"></td>
+            <td><h5>{{jogos.time.nome_popular}}</h5></td>
+            <td><p>{{jogos.pontos}}</p></td>
+            <td><p>{{jogos.jogos}}</p></td>
+            <td><p>{{jogos.vitorias}}</p></td>
+            <td></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    </div>
