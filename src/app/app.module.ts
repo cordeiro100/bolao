@@ -7,7 +7,8 @@ import { HomeComponent } from './views/home/home.component';
 
 import { CadastroComponent } from './views/cadastro/cadastro.component';
 import { TabelaComponent } from './views/tabela/tabela.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { ApostaComponent } from './views/aposta/aposta.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http'
     HomeComponent,
 
     CadastroComponent,
-     TabelaComponent
+     TabelaComponent,
+     ApostaComponent
   ],
   imports: [
     BrowserModule,
