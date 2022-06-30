@@ -1,24 +1,69 @@
 <div class="principal">
-<aside>
-    <form>
-        <label for="nome-apostador">Nome:</label>
-        <input type="text" name="nome-apostador" id="nome-apostador" placeholder="Nome do Apostador">
-        <div>
-            <label for="tel-apostador">Celular:</label>
-            <input type="tel" id="tel-apostador" name="tel-apostador" placeholder="(XX) XXXXX-XXXX">
-        </div>
-        <div>
-            <button type="submit">Enviar Aposta</button>
-
-        </div>
-    </form>
-
-</aside>
-<section>
+  <aside>
     <h2>Dados do Apostador</h2>
- 
-</section>
 
+    <form>
+      <label for="nome-apostador">Nome:</label>
+      <input
+        type="text"
+        name="nome-apostador"
+        id="nome-apostador"
+        placeholder="Nome do Apostador"
+      />
+      <div>
+        <label for="tel-apostador">Celular:</label>
+        <input
+          type="tel"
+          id="tel-apostador"
+          name="tel-apostador"
+          placeholder="(XX) XXXXX-XXXX"
+        />
+      </div>
+      <div>
+        <button type="submit">Enviar Aposta</button>
+      </div>
+    </form>
+  </aside>
 
+  
+  
+  
+  
+  
+  <section class="total">
+   
+    <table class="table table-striped">
+      <thead>
+        <tr>
+         <th><h1>Partidas</h1></th>
+         
+        </tr>
+    
+      </thead>
+  
+     
+      <tbody >
+    
+        <h3>{{ rodadaRecebida.nome }}</h3>
+
+          <tr *ngFor="let partida of rodadaRecebida.partidas">
+     
+            <td>
+            <img [src]="partida.time_mandante.escudo" >
+             {{ partida.time_mandante.nome_popular }}<input type="number" />
+           
+            </td>
+            <td>
+            
+              <img [src]="partida.time_visitante.escudo" >
+                {{ partida.time_visitante.nome_popular }}<input type="number" />
+           
+            </td>
+          </tr>
+     
+   
+    </table>
+
+  </section>
 
 </div>

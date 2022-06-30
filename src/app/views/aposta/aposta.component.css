@@ -3,7 +3,7 @@
 
 
 .principal {
-  background-image: url("src/assets/campo4.jpeg");
+
   height: 100vh;
   display: flex;
   text-align: center;
@@ -56,4 +56,30 @@ button:hover{
 
 section {
   flex: 6;
+
+
+}
+
+
+
+
+tbody input {
+  width: 40px;
+  margin: 0 0 0 20px;
+  height: 25px;
+}
+
+.total {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  text-align: center;
+}
+
+img {
+  width: 30px;
 }

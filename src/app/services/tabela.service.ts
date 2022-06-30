@@ -7,8 +7,8 @@ import { Tabela } from '../models/tabela';
   providedIn: 'root'
 })
 export class TabelaService {
-  url = 'https://api.api-futebol.com.br/v1/campeonatos/{campeonato_id}/tabela'
- 
+  url = 'https://api.api-futebol.com.br/v1/campeonatos/10/tabela'
+
  
   constructor(private httpClient: HttpClient) { }
 
@@ -16,10 +16,11 @@ export class TabelaService {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/json',
-        Authorization: 'Bearer test_b95e6f609a47c9e28941936d682513'
+        Authorization: 'Bearer live_02a219fea5b15d8e712eb9c6928672'
       })
     };
 
     return this.httpClient.get<Tabela[]>(this.url, httpOptions)
   }
+
 }

@@ -1,318 +1,49 @@
 {
-    "taca-guanabara-fase-de-grupos": {
-      "grupo-principal": [
-        {
-          "posicao": 1,
-          "pontos": 23,
-          "time": {
-            "time_id": 18,
-            "nome_popular": "Flamengo",
-            "sigla": "FLA",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c95084cb.svg"
-          },
-          "jogos": 11,
-          "vitorias": 7,
-          "empates": 2,
-          "derrotas": 2,
-          "gols_pro": 23,
-          "gols_contra": 10,
-          "saldo_gols": 13,
-          "aproveitamento": 69.7,
-          "variacao_posicao": 1,
-          "ultimos_jogos": [
-            "v",
-            "v",
-            "d",
-            "e",
-            "v"
-          ]
+    "nome": "1ª Rodada",
+    "slug": "1a-rodada",
+    "rodada": 1,
+    "status": "encerrada",
+    "proxima_rodada": {
+      "nome": "2ª Rodada",
+      "slug": "2a-rodada",
+      "rodada": 2,
+      "status": "encerrada"
+    },
+    "rodada_anterior": null,
+    "_link": "/v1/campeonatos/10/rodadas/1",
+    "partidas": [
+      {
+        "partida_id": 4844,
+        "campeonato": {
+          "campeonato_id": 10,
+          "nome": "Campeonato Brasileiro",
+          "slug": "campeonato-brasileiro"
         },
-        {
-          "posicao": 2,
-          "pontos": 22,
-          "time": {
-            "time_id": 26,
-            "nome_popular": "Fluminense",
-            "sigla": "FLU",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
-          },
-          "jogos": 11,
-          "vitorias": 7,
-          "empates": 1,
-          "derrotas": 3,
-          "gols_pro": 20,
-          "gols_contra": 11,
-          "saldo_gols": 9,
-          "aproveitamento": 66.7,
-          "variacao_posicao": 1,
-          "ultimos_jogos": [
-            "e",
-            "v",
-            "v",
-            "v",
-            "v"
-          ]
+        "placar": "Fluminense 0x0 Santos",
+        "time_mandante": {
+          "time_id": 26,
+          "nome_popular": "Fluminense",
+          "sigla": "FLU",
+          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999ca0e01e3.svg"
         },
-        {
-          "posicao": 3,
-          "pontos": 21,
-          "time": {
-            "time_id": 15,
-            "nome_popular": "Portuguesa-RJ",
-            "sigla": "POR",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c916390f.svg"
-          },
-          "jogos": 11,
-          "vitorias": 6,
-          "empates": 3,
-          "derrotas": 2,
-          "gols_pro": 20,
-          "gols_contra": 8,
-          "saldo_gols": 12,
-          "aproveitamento": 63.6,
-          "variacao_posicao": 1,
-          "ultimos_jogos": [
-            "v",
-            "e",
-            "v",
-            "e",
-            "v"
-          ]
+        "time_visitante": {
+          "time_id": 63,
+          "nome_popular": "Santos",
+          "sigla": "SAN",
+          "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999d7525121.svg"
         },
-        {
-          "posicao": 4,
-          "pontos": 21,
-          "time": {
-            "time_id": 21,
-            "nome_popular": "Volta Redonda",
-            "sigla": "VRE",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c99cab4a.svg"
-          },
-          "jogos": 11,
-          "vitorias": 6,
-          "empates": 3,
-          "derrotas": 2,
-          "gols_pro": 18,
-          "gols_contra": 13,
-          "saldo_gols": 5,
-          "aproveitamento": 63.6,
-          "variacao_posicao": -3,
-          "ultimos_jogos": [
-            "v",
-            "v",
-            "e",
-            "e",
-            "d"
-          ]
+        "placar_mandante": 0,
+        "placar_visitante": 0,
+        "status": "finalizado",
+        "slug": "fluminense-santos-4844",
+        "data_realizacao": "09/04/2022",
+        "hora_realizacao": "16:30",
+        "data_realizacao_iso": "2022-04-09T16:30:00-0300",
+        "estadio": {
+          "estadio_id": 19,
+          "nome_popular": "Maracanã"
         },
-        {
-          "posicao": 5,
-          "pontos": 17,
-          "time": {
-            "time_id": 23,
-            "nome_popular": "Vasco",
-            "sigla": "VAS",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9c703f0.svg"
-          },
-          "jogos": 11,
-          "vitorias": 4,
-          "empates": 5,
-          "derrotas": 2,
-          "gols_pro": 21,
-          "gols_contra": 15,
-          "saldo_gols": 6,
-          "aproveitamento": 51.5,
-          "variacao_posicao": 1,
-          "ultimos_jogos": [
-            "e",
-            "v",
-            "v",
-            "e",
-            "v"
-          ]
-        },
-        {
-          "posicao": 6,
-          "pontos": 15,
-          "time": {
-            "time_id": 11,
-            "nome_popular": "Nova Iguaçu",
-            "sigla": "NIG",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c8ba4169.svg"
-          },
-          "jogos": 11,
-          "vitorias": 4,
-          "empates": 3,
-          "derrotas": 4,
-          "gols_pro": 16,
-          "gols_contra": 15,
-          "saldo_gols": 1,
-          "aproveitamento": 45.5,
-          "variacao_posicao": 1,
-          "ultimos_jogos": [
-            "v",
-            "d",
-            "d",
-            "v",
-            "v"
-          ]
-        },
-        {
-          "posicao": 7,
-          "pontos": 15,
-          "time": {
-            "time_id": 17,
-            "nome_popular": "Madureira",
-            "sigla": "MAD",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c93c8099.svg"
-          },
-          "jogos": 11,
-          "vitorias": 3,
-          "empates": 6,
-          "derrotas": 2,
-          "gols_pro": 13,
-          "gols_contra": 16,
-          "saldo_gols": -3,
-          "aproveitamento": 45.5,
-          "variacao_posicao": -2,
-          "ultimos_jogos": [
-            "e",
-            "d",
-            "e",
-            "v",
-            "d"
-          ]
-        },
-        {
-          "posicao": 8,
-          "pontos": 12,
-          "time": {
-            "time_id": 22,
-            "nome_popular": "Botafogo",
-            "sigla": "BOT",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9b06760.svg"
-          },
-          "jogos": 10,
-          "vitorias": 2,
-          "empates": 6,
-          "derrotas": 2,
-          "gols_pro": 10,
-          "gols_contra": 9,
-          "saldo_gols": 1,
-          "aproveitamento": 40,
-          "variacao_posicao": 0,
-          "ultimos_jogos": [
-            "v",
-            "e",
-            "e",
-            "e",
-            "d"
-          ]
-        },
-        {
-          "posicao": 9,
-          "pontos": 11,
-          "time": {
-            "time_id": 19,
-            "nome_popular": "Resende",
-            "sigla": "RES",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c96a8a14.svg"
-          },
-          "jogos": 11,
-          "vitorias": 3,
-          "empates": 2,
-          "derrotas": 6,
-          "gols_pro": 11,
-          "gols_contra": 21,
-          "saldo_gols": -10,
-          "aproveitamento": 33.3,
-          "variacao_posicao": 0,
-          "ultimos_jogos": [
-            "d",
-            "d",
-            "v",
-            "d",
-            "d"
-          ]
-        },
-        {
-          "posicao": 10,
-          "pontos": 11,
-          "time": {
-            "time_id": 20,
-            "nome_popular": "Boavista",
-            "sigla": "BVT",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c989287e.svg"
-          },
-          "jogos": 11,
-          "vitorias": 2,
-          "empates": 5,
-          "derrotas": 4,
-          "gols_pro": 14,
-          "gols_contra": 16,
-          "saldo_gols": -2,
-          "aproveitamento": 33.3,
-          "variacao_posicao": 0,
-          "ultimos_jogos": [
-            "d",
-            "v",
-            "e",
-            "e",
-            "d"
-          ]
-        },
-        {
-          "posicao": 11,
-          "pontos": 6,
-          "time": {
-            "time_id": 24,
-            "nome_popular": "Bangu",
-            "sigla": "BAN",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c9e3935a.svg"
-          },
-          "jogos": 11,
-          "vitorias": 1,
-          "empates": 3,
-          "derrotas": 7,
-          "gols_pro": 5,
-          "gols_contra": 18,
-          "saldo_gols": -13,
-          "aproveitamento": 18.2,
-          "variacao_posicao": 0,
-          "ultimos_jogos": [
-            "d",
-            "d",
-            "d",
-            "e",
-            "d"
-          ]
-        },
-        {
-          "posicao": 12,
-          "pontos": 1,
-          "time": {
-            "time_id": 14,
-            "nome_popular": "Macaé",
-            "sigla": "MAC",
-            "escudo": "https://apifutebol.s3.sa-east-1.amazonaws.com/escudos/5f999c8febd2d.svg"
-          },
-          "jogos": 10,
-          "vitorias": 0,
-          "empates": 1,
-          "derrotas": 9,
-          "gols_pro": 6,
-          "gols_contra": 25,
-          "saldo_gols": -19,
-          "aproveitamento": 3.3,
-          "variacao_posicao": 0,
-          "ultimos_jogos": [
-            "d",
-            "d",
-            "d",
-            "d",
-            "d"
-          ]
-        }
-      ]
-    }
+        "_link": "/v1/partidas/4844"
+      }
+    ]
   }
