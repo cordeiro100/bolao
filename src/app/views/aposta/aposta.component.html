@@ -2,14 +2,20 @@
   <aside>
     <h2>Dados do Apostador</h2>
 
-    <form>
-      <label for="nome-apostador">Nome:</label>
+    <form #apostaForm="ngForm" [formGroup]="cadastroForm" (ngSubmit)="confirmarAposta()">
+      <label for="nome">Nome:</label>
       <input
         type="text"
-        name="nome-apostador"
-        id="nome-apostador"
+        name="nome"
+        id="nome"
         placeholder="Nome do Apostador"
+        formControlName="nome"
+        [(ngModel)]="nome"
+     
       />
+      <small *ngIf="cadastroForm.get('nome')?.errors?.['required']" class="text-danger d-block mt-2">
+        <p>Digite seu nome e sobrenome</p>
+      </small>
       <div>
         <label for="tel-apostador">Celular:</label>
         <input
@@ -17,10 +23,17 @@
           id="tel-apostador"
           name="tel-apostador"
           placeholder="(XX) XXXXX-XXXX"
+          formControlName="celular"
+          [(ngModel)]="celular"
+        
+         
         />
+        <small *ngIf="cadastroForm.get('celular')?.errors?.['required']" class="text-danger d-block mt-2">
+          <p>Digite seu número de celular</p>
+        </small>
       </div>
       <div>
-        <button type="submit">Enviar Aposta</button>
+        <button  id="botao-login "type="submit" [disabled]="!cadastroForm.valid">Enviar Aposta</button>
       </div>
     </form>
   </aside>
@@ -65,5 +78,30 @@
     </table>
 
   </section>
+
+  <h1>Suas Apostas</h1>
+  <div class="extrato">
+    <table class="tabela">
+      <thead class="tabela__cabecalho">
+        <th class="tabela__cabecalho__conteudo">Nome</th>
+        <th class="tabela__cabecalho__conteudo">Celular</th>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let apostas of aposta"
+          class="tabela__linha"
+        >
+          <td class="tabela__conteudo">
+            {{ apostas.nome }}
+          </td>
+          <td class="tabela__conteudo">{{ apostas.celular }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #listaVazia>
+      <p class="mensagem">Sem transferências</p>
+    </ng-template>
+  </div>
+
 
 </div>

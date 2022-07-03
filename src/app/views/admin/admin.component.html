@@ -1,0 +1,29 @@
+<div class="extrato-completo">
+    <div class="extrato-bancario">
+      <h1>Suas transferências</h1>
+      <a routerLink="/profile"> Voltar para dashboard</a>
+      <div class="extrato">
+        <table class="tabela">
+          <thead class="tabela__cabecalho">
+            <th class="tabela__cabecalho__conteudo">Nome</th>
+            <th class="tabela__cabecalho__conteudo">Celular</th>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let aposta of apostas"
+              class="tabela__linha"
+            >
+              <td class="tabela__conteudo">
+               
+              </td>
+              <td class="tabela__conteudo">{{ aposta.nome }}</td>
+              <td class="tabela__conteudo">{{ aposta.celular }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <ng-template #listaVazia>
+          <p class="mensagem">Sem transferências</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>

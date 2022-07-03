@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "projetobolao-5cab4": {
+      "hosting": {
+        "bolao": [
+          "projetobolao-5cab4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "projetobolao-5cab4"
+  }
+}
